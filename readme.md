@@ -110,8 +110,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{ad8a2fa1
         DisplayName: Microsoft Visual C++ 2005 Redistributable (x64)
         sEstimatedSize2: 7000
 = Product = : HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\1af2a8da7e60d0b429d7e6453b3d0182
-
-
 ```
 
 The first line display the package name, which match the name display in *Uninstall or remove apps and programs*
@@ -120,6 +118,8 @@ The second line indicate the key in registry of uninstall list
 
 The last line indicate the key in registry of product
 
+Delete  these two items, you maybe able to install a newer package if you have the same situation (cannot uninstall the package with normal method)
 
+#### CAUTION
 
-
+This script only **Read** your registry, it won't modify or save anything. So you must be sure to **make a backup** before you doing any modify to your registry. 
